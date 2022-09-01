@@ -21,11 +21,11 @@ const Ecommerce = () => {
   return (
     <div className="mt-24">
       <div className="flex flex-wrap lg:flex-nowrap justify-center ">
-        <div className=" bg-black hover:bg-gradient-to-r hover:from-pink-500 hover:to-yellow-500 dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:w-80 p-8 pt-9 m-3  bg-no-repeat bg-cover bg-center">
+        <div className=" bg-gradient-to-r from-teal-100 to-rose-100 hover:bg-gradient-to-l hover:from-teal-100 hover:to-rose-100 dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:w-80 p-8 pt-9 m-3  bg-no-repeat bg-cover bg-center">
           <div className="flex justify-between items-center">
             <div>
-              <p className="font-bold text-slate-100">Earnings</p>
-              <p className="text-2xl text-slate-50">$63,448.78</p>
+              <p className="font-bold text-black">Earnings</p>
+              <p className="text-2xl text-slate-900">$63,448.78</p>
             </div>
             <button
               type="button"
@@ -46,7 +46,7 @@ const Ecommerce = () => {
         </div>
         <div className="flex m-3 flex-wrap justify-center gap-1 items-center">
           {earningData.map((item) => (
-            <div key={item.title} className="bg-white h-44 dark:text-gray-200 dark:bg-secondary-dark-bg md:w-56  p-4 pt-9 rounded-2xl ">
+            <div key={item.title} className="bg-[#FEEAE6] h-44 dark:text-gray-200 dark:bg-secondary-dark-bg md:w-56  p-4 pt-9 rounded-2xl ">
               <button
                 type="button"
                 style={{ color: item.iconColor, backgroundColor: item.iconBg }}
