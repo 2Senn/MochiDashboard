@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './index.css';
-import App from './app';
-import { ContextProvider } from './contexts/context-provider';
+import App from './App';
+import { ContextProvider } from './contexts/ContextProvider';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,4 +13,3 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root'),
 );
-

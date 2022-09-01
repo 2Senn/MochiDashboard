@@ -4,17 +4,12 @@ import { SiShopware } from 'react-icons/si';
 import { MdOutlineCancel } from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
-import { links } from '../assets/dummy';
-import { useStateContext } from '../contexts/context-provider';
+import { links } from '../data/dummy';
+import { useStateContext } from '../contexts/ContextProvider';
 import { GiJapaneseBridge } from 'react-icons/gi';
 
 const Sidebar = () => {
-  const {
-    currentColor,
-    activeMenu,
-    setActiveMenu,
-    screenSize } = useStateContext();
-
+  const { currentColor, activeMenu, setActiveMenu, screenSize } = useStateContext();
 
   const handleCloseSideBar = () => {
     if (activeMenu !== undefined && screenSize <= 900) {
